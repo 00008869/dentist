@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --color-primary: #007bff;
+    --color-secondary: #0a47b7;
+    --color-bg: #eaf4ff;
+    --color-dark: rgb(46, 46, 46);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: var(--color-bg);
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto; 
+}
+
+.topBar{
+    margin: 0;
+    padding: 25px 0 45px 0;
+}
+
+.topBar ul{
+    padding: 0;
+    margin: 0;
+}
+
+.topBar li{
+    display: inline;
+    float: left;
+    position: relative;
+    text-decoration: none;
+    padding-right: 40px;
+    padding-left: 35px;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.topBar li::before{
+    content: "";
+    color: red;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0px;
+    top:-3px;
+    background-size: 25px 25px;
+}
+
+.topBar li:nth-child(1)::before{
+    background-image: url("images/phoneIcon.png");
+}
+.topBar li:nth-child(2)::before{
+    background-image: url("images/locatioIcon.png");
+}
+.topBar li:nth-child(3)::before{
+    background-image: url("images/timeIcon.png");
+}
+
+.topBar a{
+    padding: 0;
+    font-size: 14px;
+    margin: 0;
+    float: right;
+    text-transform: lowercase;
+    margin-top: -10px;
+    color: white;
+    background-color: var(--color-primary);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 100px;
+}
+
+.hero{
+    padding: 0;
+    height: 100vh;
+    text-align: center;
+    background-image: url("images/bg-doc-hero.jpg");
+    background-size: cover;
+    background-position: 0 0;
+}
+
+.hero70{
+    display: inline;
+    width: 60%;
+    float: left;
+    text-align: left;
+    color: white;
+    position: relative;
+
+}
+.hero70 h1{
+    margin-top: 210px;
+    font-size: 53px;
+}
+
+p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.hero70 p{
+    color: var(--color-bg);
+    margin-bottom: 80px;
+}
+
+.mainButton{
+    color: white;
+    background-color: #008aff;
+    padding: 30px 40px;
+    border-radius: 200px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 0px 40px rgba(107, 184, 255, 0.377);
+    border: rgb(0, 162, 255) 3px solid;
+}
+.heroButtonSecond{
+    margin-left: 20px;
+    color: white;
+    border: white 3px solid;
+    padding: 30px 40px;
+    border-radius: 200px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.doctor{
+    width: 720px;
+    position: absolute;
+    float: right;
+    right: 170px;
+    bottom: -70px;
+}
+
+.services{
+    position: relative;
+    z-index: 3;
+    margin-top: -70px;
+}
+
+.serviceText{
+    display: inline-block;
+    width: 25%;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+h2{
+    font-size: 35px;
+}
+
+.downloadButton{
+    display: inline-block;
+    color: white;
+    background-color: var(--color-secondary);
+    padding: 20px 30px;
+    border-radius: 200px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.serviceIcons{
+    width: 65%;
+    background-color: var(--color-bg);
+    float: right;
+    border-radius: 30px;
+}
+.flexIcons{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.flexIcons img{
+    width: 18%;
+    padding: 10px;
+}
+.whyWe .container{
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.whyWeText{
+    width: 40%;   
+}
+.whyWeText h2{
+    margin-top: 120px;
+    color: var(--color-secondary);   
+}
+.whyWeText p{
+    position: relative;
+    z-index: 3;
+    margin-bottom: 70px;
+}
+.whyWeText img{
+    position: absolute;
+    width: 750px;
+    top: 0;
+    right: 0;
+}
+
+.numbersList{
+    border-radius: 20px;
+    background-color: var(--color-bg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+.numbersList li{
+    margin: 0 10px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.numbersList li h2{
+    color: var(--color-primary);
+}
+
+.numbersList li p{
+    padding-bottom: 15px;
+    margin-top: -20px;
+}
+
+
+/*-----SLIDER-----*/
+.testimonials{
+    width: 100%;
+    margin-top: -80px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #080808;
+    background: url("images/bgReviews.jpg");
+    background-size: cover;
+}
+
+.testimonial{
+
+    position: relative;
+    min-width: 350px;
+    min-height: 250px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif
+}
+
+.testimonial h2{
+    color: white;
+    text-align: center;
+}
+
+
+.wrapper{
+    width: 300%;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.card{
+    width: 100%;
+    min-height: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 50px 10px 20px 0;
+}
+
+.card-thumb{
+    width: 70%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    padding-right: 15px;
+}
+
+.client-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body{
+    width: 120%;
+    min-height: 100%;
+    height: auto;
+    margin-left: 20px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.review{
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.clientName{
+    margin-top: 20px;
+    font-size: 23px;
+    margin-bottom: -20px;
+    color: var(--color-primary);
+}
+
+.rating{
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star{
+    width: 25px;
+    margin-right: 5px;
+}
+
+.indicators{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.indicators button{
+    background: none;
+    border: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: .5s;
+}
+
+button.active{
+    width: 40px;
+    border-radius: 50px;
+    background: #fff;
+}
+
+/*----Aligners----*/
+.aligners{
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+
+.alignersText{
+    width: 60%;
+    display: inline-block;
+}
+.alignersText h2{
+    color: var(--color-secondary);
+    padding-top: 100px;
+}
+
+.alignersList{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px 80px 0;
+    padding: 0;
+}
+
+.alignersItem{
+    list-style-type: none;
+    width: 40%;
+    background-color: var(--color-bg);
+    border-radius: 20px;
+    padding: 5px 20px 10px 30px;
+    margin: 20px 20px 0 0;
+    position: relative;
+}
+
+.aligners img{
+    width: 40%;
+    float: right;
+    position: absolute;
+    margin-top: 130px;
+}
+.alignersItem p{
+    font-size: 16px;
+    line-height: 25px;
+}
+.alignersHeader{
+    color: var(--color-secondary);
+    font-weight: 700;
+    font-size: 20px !important;
+}
+
+/*----Form----*/
+.contactUsForm{
+    background-color: var(--color-primary);
+    padding: 15px 0 20px 0;
+}
+
+.fiftyTofifty{
+    width: 40%;
+    color: white;
+    display: inline-block;
+}
+form{
+    display: block;
+    float: right;
+    margin-top: 40px;
+}
+
+.telNummer{
+    padding: 25px 50px 25px 50px;
+    border-radius: 100px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+.submitButton{
+    padding: 25px 60px;
+    border-radius: 100px;
+    margin-left: 15px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: var(--color-secondary);
+}
+/*----Doctors----*/
+.doctorsection{
+    height: 100vh;
+    margin-top: -30px;
+}
+.doctorsection .mainButton{
+    text-align: center;
+    display: block;
+    margin: 50px auto;
+    width: 200px;
+} 
+.doc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.doctors{
+    width: 30%;
+    border-radius: 30px;
+    height: 53vh;
+    background-color: var(--color-bg);
+    overflow: hidden;
+}
+.doctors img{
+    width: 70%;
+    display: block;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.doctorsection h2{
+    color: var(--color-secondary);
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+
+.headingDoctors{
+    text-align: center;
+    font-size: 25px;
+    color: var(--color-primary);
+}
+.doctorsSpecs{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    background-color: var(--color-primary);
+    padding: 7px 7px;
+    border-radius: 100px;
+    display: block;
+    width: 50%;
+    margin: auto;
+    font-size: 16px;
+    margin-top: -10px;
+
+}
+
+footer{
+    background-color: var(--color-primary);
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+/*----form css----*/
+.popup{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9990;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.884);
+}
+.popitblock{
+    width: 50%;
+    margin: 25% auto;
+    padding: 20px 70px;
+    border-radius: 30px;
+    color: white;
+    background-color: var(--color-primary);
+    position: relative;
+    box-shadow: 0 10px 100px rgb(0, 140, 255);
+}
+.popitblock a{
+ background-color: var(--color-secondary);
+ color: white;
+ text-decoration: none;
+ font-weight: 700;
+ padding: 20px;
+ border-radius: 30px;
+ display: inline-block;
+ margin-bottom: 20px;
+}
+.popitblock form{
+    display: inline;
+    margin-top: 0px;
+}
+#phone{
+    font-size: 18px;
+    padding: 15px 15px 15px 20px;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: dimgrey;
+    text-decoration: none;
+
+}
+#submit{
+    font-size: 18px;
+    margin-left: -50px;
+    padding: 16px 30px;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: var(--color-secondary);
+    text-decoration: none;
+}
+.popitblock img{
+    width: 35px;
+    position: absolute;
+    height: 35px;
+    top: 20px;
+    right: 20px;
+}
+
+
+@media (max-width: 800px){
+    .container{
+        width: 50%;
+        margin: auto;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .card-thumb{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .card-body{
+        width: 100%;
+        min-height: auto;
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (min-width: 1440px) and (max-width: 1919px){
+    .container{
+        width: 100%;
+    }
+    .doctor{
+        right: 10px
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+    .container{
+        width: 100%;
+        overflow: hidden;
+        margin-right: 0;
+        margin: auto;
+    }
+    .doctor{
+        right: -80px;
+        top: 131px;
+    }
+    .hero{
+        margin-bottom: -150px;
+    }
+    .hero70{
+        width: 50%;
+        margin-top: -70px;
+    }
+    .hero70 h1{
+        font-size: 40px;
+    }
+    .hero70 a{
+        font-size: 18px;
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+
+    .serviceText h2{
+        font-size: 24px;
+    }
+    .serviceText a{
+        font-size: 14px;
+    }
+}
