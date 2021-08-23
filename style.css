@@ -645,7 +645,7 @@ footer{
     }
 }
 
-@media screen and (min-width: 425px) and (max-width: 768px){
+@media screen and (min-width: 375px) and (max-width: 425px){
     .topBar{
         line-height: 30px;
         height: 10vh;
