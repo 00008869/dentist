@@ -650,6 +650,7 @@ footer{
         line-height: 30px;
         height: 10vh;
         padding: 20px;
+        margin-bottom: 20px;
     }   
     .topBarList{
         font-size: 14px;
@@ -661,7 +662,7 @@ footer{
         margin-top: -43px;
     }
     .hero{
-        height: 80vh;
+        height: 100vh;
     }
     .container{
         width: 100%;
