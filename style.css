@@ -650,7 +650,7 @@ footer{
         line-height: 30px;
         height: 10vh;
         padding: 20px;
-        padding-bottom: 40px;
+        padding-bottom: 35px;
     }   
     .topBarList{
         font-size: 14px;
@@ -691,4 +691,54 @@ footer{
         line-height: 11em;
     margin: 0;
     }
+    .serviceText{
+        display: block;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+    .serviceText h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .serviceIcons{
+        display: contents;
+        text-align: center;
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+    .flexIcons{
+        padding: 0;
+        margin: 0;
+    }
+    .flexIcons img{
+        width: 30%;
+    }
+    .whyWeText{
+        width: 100%;
+    text-align: center;
+    margin-top: -60px;
+    }
+    .whyWeText h2{
+        font-size: 26px;
+        padding: 0px 40px;
+    }
+    .whyWeText p{
+        padding: 0px 40px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .whyWeText a{
+        position: relative;
+    z-index: 99;
+    }
+    .whyWeText img{
+        position: relative;
+    width: 100%;
+    margin-top: 50px;
+    }
+
 }
