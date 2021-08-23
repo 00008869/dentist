@@ -737,8 +737,38 @@ footer{
     }
     .whyWeText img{
         position: relative;
-    width: 100%;
+    width: 90%;
     margin-top: 50px;
     }
-
+    .whyWe .container{
+        margin-bottom: 0;
+    }
+    .statistics{
+        margin-top: -40px;
+    }
+    .numbersList{
+        margin: 20px;
+        padding: 0;
+    }
+    .numbersItem h2{
+        font-size: 30px;
+    }
+    .numbersItem p{
+        font-size: 16px;
+    }
+    .testimonials{
+        height: 100%;
+        padding-bottom: 50px;
+    }
+    .testimonial{
+        padding: 0 20px;
+    }
+    .testimonial h2{
+        margin-top: 120px;
+    }
+    .wrapper{
+        margin-top: -20px;
+        width: 600%;
+        margin-bottom: 20px;
+    }
 }
