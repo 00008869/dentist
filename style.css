@@ -805,7 +805,7 @@ footer{
         padding: 20px;
     }
     .contactUsForm{
-        height: 40vh;
+        height: 45vh;
         text-align: center;
     }
     .contactUsForm form{
@@ -846,6 +846,9 @@ footer{
     }
     footer p{
         font-size: 15px;
+    }
+    footer{
+        margin-top: 60px;
     }
     .popitblock{
         margin: 100px auto;
