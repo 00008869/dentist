@@ -771,4 +771,78 @@ footer{
         width: 600%;
         margin-bottom: 20px;
     }
+    .alignersText{
+        width: 100%;
+    text-align: center;
+    }
+    .alignersText p{
+        padding: 0px 40px;
+    font-size: 16px;
+    line-height: 24px;
+    }
+    .alignersText h2{
+        margin: 0;
+    padding: 50px 0 0 0;
+    font-size: 26px;
+    }
+    .alignersItem{
+        width: 100%;
+    padding: 0;
+    margin: 10px 20px;
+    }
+    .aligners{
+        height: 100%;
+    }
+    .aligners img{
+        display: none;
+    }
+    .fiftyTofifty{
+        width: 100%;
+    }
+    .fiftyTofifty h2{
+        font-size: 26px;
+        text-align: center;
+        padding: 20px;
+    }
+    .contactUsForm{
+        height: 40vh;
+        text-align: center;
+    }
+    .contactUsForm form{
+        margin: 0;
+    }
+    .telNummer{
+        width: 70%;
+        padding: 20px;
+    }
+    .submitButton{
+        width: 70%;
+        padding: 20px;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .doctorsection{
+        width: 100%;
+    }
+    .doctorsection h2{
+        font-size: 26px;
+        padding: 40px 20px;
+        margin-top: 50px;
+    }
+    .doc{
+        margin: auto;
+        padding: 0 40px;
+    }
+    .doctors{
+        width: 100%;
+    }
+    .doctors:nth-child(2){
+        display: none;
+    }
+    .doctors:nth-child(3){
+        display: none;
+    }
+    footer p{
+        font-size: 15px;
+    }
 }
