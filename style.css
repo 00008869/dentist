@@ -147,8 +147,7 @@ p{
 }
 
 .serviceText{
-    display: inline-block;
-    width: 25%;
+
     background-color: var(--color-primary);
     color: white;
     padding: 10px 40px;
@@ -168,24 +167,6 @@ h2{
     font-weight: 700;
     text-decoration: none;
     margin-bottom: 20px;
-}
-.serviceIcons{
-    width: 65%;
-    background-color: var(--color-bg);
-    float: right;
-    border-radius: 30px;
-}
-.flexIcons{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-}
-.flexIcons img{
-    width: 18%;
-    padding: 10px;
 }
 .whyWe .container{
     position: relative;
@@ -578,6 +559,10 @@ footer{
     top: 20px;
     right: 20px;
 }
+.doctor {
+    height: 100%;
+    width: auto;
+}
 
 
 @media (max-width: 800px){
@@ -700,22 +685,12 @@ footer{
         margin-bottom: 20px;
     }
     .serviceText h2{
+        display: inline-block;
         font-size: 30px;
         text-align: center;
     }
-    .serviceIcons{
-        display: contents;
-        text-align: center;
-        width: 90%;
-        padding: 0;
-        margin: 0;
-    }
-    .flexIcons{
-        padding: 0;
-        margin: 0;
-    }
-    .flexIcons img{
-        width: 30%;
+    .folder{
+        width: 1230px;
     }
     .whyWeText{
         width: 100%;
