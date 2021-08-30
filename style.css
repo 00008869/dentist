@@ -62,7 +62,9 @@ header{
 .topBar li:nth-child(3)::before{
     background-image: url("images/timeIcon.png");
 }
-
+.statistics{
+    display: none;
+}
 .topBar a{
     padding: 0;
     font-size: 14px;
@@ -143,7 +145,7 @@ p{
 .services{
     position: relative;
     z-index: 3;
-    margin-top: -70px;
+    margin-top: -50px;
 }
 
 .serviceText{
@@ -490,6 +492,13 @@ form{
     margin-top: -10px;
 
 }
+.serviceText h2{
+    display: inline-block;
+}
+.serviceText img{
+    float: right;
+    margin-top: 10px;
+}
 
 footer{
     background-color: var(--color-primary);
@@ -570,6 +579,9 @@ footer{
         width: 50%;
         margin: auto;
     }
+    .serviceText img{
+        display: none;
+    }
     .card{
         flex-direction: column;
     }
@@ -596,13 +608,20 @@ footer{
 
 @media screen and (min-width: 1024px) and (max-width: 1439px){
     .container{
-        width: 100%;
+        width: 90%;
         overflow: hidden;
         margin-right: 0;
         margin: auto;
     }
+    .downloadButton{
+        float: right;
+    margin-top: 5px;
+    }
+    .serviceText img{
+        display: none;
+    }
     .doctor{
-        right: -80px;
+        right: 80px;
         top: 131px;
     }
     .hero{
@@ -613,6 +632,7 @@ footer{
         margin-top: -70px;
     }
     .hero70 h1{
+        margin-top: 20vh;
         font-size: 40px;
     }
     .hero70 a{
@@ -621,13 +641,28 @@ footer{
         margin-bottom: 20px;
         margin-left: 0px;
     }
-
+    .serviceText{
+        margin-top: 130px;
+    }
     .serviceText h2{
+
         font-size: 24px;
     }
     .serviceText a{
         font-size: 14px;
     }
+    .whyWeText img{
+        position: absolute;
+    width: 60%;
+    top: 90px;
+    right: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .serviceText img{
+        display: none;
+    } 
 }
 
 @media screen and (min-width: 375px) and (max-width: 425px){
@@ -636,7 +671,10 @@ footer{
         height: 10vh;
         padding: 20px;
         padding-bottom: 35px;
-    }   
+    } 
+    .serviceText img{
+        display: none;
+    }  
     .topBarList{
         font-size: 14px;
     }
@@ -719,9 +757,11 @@ footer{
         margin-bottom: 0;
     }
     .statistics{
+        display: none;
         margin-top: -40px;
     }
     .numbersList{
+        display: none;
         margin: 20px;
         padding: 0;
     }
