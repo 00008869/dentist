@@ -672,6 +672,7 @@ footer ul{
     .serviceText img{
         display: none;
     } 
+    
 }
 
 @media screen and (min-width: 375px) and (max-width: 425px){
@@ -906,5 +907,14 @@ footer ul{
         margin: 0px 25px;
         width: 80%;
     }
+    .logo__footer{
+        width: 30%;
+    float: right;
+    margin-top: 4px;
+    }
+    footer ul{
+        width: 70%;
+    }
     
+
 }
