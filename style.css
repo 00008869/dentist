@@ -225,7 +225,7 @@ h2{
 /*-----SLIDER-----*/
 .testimonials{
     width: 100%;
-    margin-top: -80px;
+    margin-top: 70px;
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -351,7 +351,7 @@ button.active{
 
 /*----Aligners----*/
 .aligners{
-    height: 100vh;
+
     margin-bottom: 100px;
 }
 
@@ -437,6 +437,7 @@ form{
 }
 /*----Doctors----*/
 .doctorsection{
+    display: none;
     height: 100vh;
     margin-top: -30px;
 }
@@ -501,7 +502,6 @@ form{
 }
 
 footer{
-    background-color: var(--color-primary);
     text-align: center;
     color: white;
     padding: 10px 0;
@@ -549,6 +549,15 @@ footer{
     color: dimgrey;
     text-decoration: none;
 
+}
+.logo__footer{
+    float: left;
+    width: 100px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+footer ul{
+    float: right;
 }
 #submit{
     font-size: 18px;
@@ -772,6 +781,7 @@ footer{
         font-size: 16px;
     }
     .testimonials{
+        margin-top: -4px;
         height: 100%;
         padding-bottom: 50px;
     }
