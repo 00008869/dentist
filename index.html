@@ -16,8 +16,8 @@
                     <h2>Оставьте ваш номер телефона и мы вам перезвоним</h2>
                     <p>Либо позвоните нам с вашего номера и забранируем для вас время:</p>
                     <a href="#" class="telButton">+998 91 123 45 67</a>
-                    <form action="POST">
-                        <input id="phone" type="text" placeholder="+998 (__) ___-__-__" data-slots="_">
+                    <form action="telegram.php" method="POST">
+                        <input id="phone" type="text" name="user_phone" placeholder="+998 (__) ___-__-__" data-slots="_">
                         <input id="submit" type="submit" value="oтправить">
                     </form>
                     <img id="closeit" src="images/close.png" alt="closeit">
@@ -42,10 +42,10 @@
                     <div class="hero70">
                         <h1>Добро пожаловать<br>в стоматологию Насимова</h1>
                         <p>Мы занимаемся безболезненным лечением зубов и слизистой оболочки полости рта. Устанавливаем
-                                                    брекеты,
-                                                    элайнеры и многое другое. Клиника работает под руководством опытного стоматолога и ортодонта
-                                                    Эльбека
-                                                    Насимова.</p>
+                                                                                                                                                                                                                                                                                                                                            брекеты,
+                                                                                                                                                                                                                                                                                                                                            элайнеры и многое другое. Клиника работает под руководством опытного стоматолога и ортодонта
+                                                                                                                                                                                                                                                                                                                                            Эльбека
+                                                                                                                                                                                                                                                                                                                                            Насимова.</p>
                         <a href="#" class="mainButton" id="openPop">Бесплатная консультация</a>
                         <a href="#" class="heroButtonSecond" id="openPop">Позвонить нам</a>
                     </div>
@@ -66,8 +66,8 @@
                     <div class="whyWeText">
                         <h2>Почему вам стоит выбрать нашу клинику?</h2>
                         <p>Команда доктора Насимова работает вместе более 3 лет. Среди специалистов клиники есть профессора,
-                                                    которые занимаются и обучаются за рубежом. Мы используем самые современные технологии для
-                                                    безболезненного лечения. И дети, и взрослые чувствуют себя комфортно в кресле наших врачей.</p>
+                                                                                                                                                                                                                                                                                                                                            которые занимаются и обучаются за рубежом. Мы используем самые современные технологии для
+                                                                                                                                                                                                                                                                                                                                            безболезненного лечения. И дети, и взрослые чувствуют себя комфортно в кресле наших врачей.</p>
                         <a href="#" class="mainButton buttonWhyWe" id="openPop">Узнать подробнее</a>
                         <img src="images/team-group.jpg" alt="Our doctors">
                     </div>
@@ -79,8 +79,8 @@
                     <div class="fiftyTofifty">
                         <h2>Оставьте ваш номер и мы позвоним вам!</h2>
                     </div>
-                    <form action="submit">
-                        <input class="telNummer" type="number">
+                    <form action="telegram.php" method="POST">
+                        <input class="telNummer" name="user_phone" type="number">
                         <input class="submitButton" type="submit" value="ОТПРАВИТЬ">
                     </form>
                 </div>
@@ -120,7 +120,7 @@
                     <div class="alignersText">
                         <h2>Элайнеры — невидимая альтернатива брекетам</h2>
                         <p>Современные технологии позволяют не портить вашу улыбку. С элайнерами люди вокруг не узнают, что
-                                                    вы проходите лечение у ортодонта.</p>
+                                                                                                                                                                                                                                                                                                                                            вы проходите лечение у ортодонта.</p>
                         <ul class="alignersList">
                             <li class="alignersItem">
                                 <p class="alignersHeader">Элайнеры не видно</p>
@@ -166,8 +166,8 @@
                             <p class="doctorsSpecs">направление</p>
                         </div>
                     </div>
-<a href="https://www.instagram.com/nasimov.orthodontics/" class="mainButton" target="_blank">Все специалисты</a>               
-</div>
+                    <a href="https://www.instagram.com/nasimov.orthodontics/" class="mainButton" target="_blank">Все специалисты</a>
+                </div>
             </section>
             <section class="testimonials">
                 <div class="container testimonial">
@@ -282,25 +282,25 @@
                     <div class="fiftyTofifty">
                         <h2>Оставьте ваш номер и мы позвоним вам!</h2>
                     </div>
-                    <form action="submit">
-                        <input class="telNummer" type="number">
+                    <form action="telegram.php" method="POST">
+                        <input class="telNummer" name="user_phone" type="number">
                         <input class="submitButton" type="submit" value="ОТПРАВИТЬ">
                     </form>
                 </div>
             </section>
-            
+
         </main>
         <footer>
-<div class="container">
-    <div class="topBar">
-        <img class="logo__footer" src="images/n-logo.png" alt="">
-        <ul>
-            <li class="topBarList">+998 97 158 1111</li>
-            <li class="topBarList">Ташкент, ул. Бабура, 61</li>
-            <li class="topBarList">09:00 — 21:00</li>
-        </ul>
-    </div>
-</div>
+            <div class="container">
+                <div class="topBar">
+                    <img class="logo__footer" src="images/n-logo.png" alt="">
+                    <ul>
+                        <li class="topBarList">+998 97 158 1111</li>
+                        <li class="topBarList">Ташкент, ул. Бабура, 61</li>
+                        <li class="topBarList">09:00 — 21:00</li>
+                    </ul>
+                </div>
+            </div>
         </footer>
         <script src="app.js"></script>
     </body>
