@@ -3,13 +3,13 @@
 /* https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXXXXX/getUpdates,
 где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
 
-
+$websiteName = "";
 $phone = $_POST['user_phone'];
 
 $token = "5190563084:AAFHSOlowsrPXmk7hcHDOIJ5mopjd8Didig";
 $chat_id = "-679966720";
 $arr = array(
-
+  'Пришла новая заявка с сайта' => $websiteName,
   'Телефон: ' => $phone
 );
 
