@@ -172,7 +172,8 @@ h2{
 }
 .whyWe .container{
     position: relative;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 
 .whyWeText{
@@ -225,7 +226,6 @@ h2{
 /*-----SLIDER-----*/
 .testimonials{
     width: 100%;
-    margin-top: 70px;
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -350,8 +350,7 @@ button.active{
 }
 
 /*----Aligners----*/
-.aligners{
-
+.aligners .alignersText{
     margin-bottom: 100px;
 }
 
@@ -517,7 +516,7 @@ footer{
     background-color: rgba(0, 0, 0, 0.884);
 }
 .popitblock{
-    width: 50%;
+    width: 45%;
     margin: 25% auto;
     padding: 20px 70px;
     border-radius: 30px;
@@ -582,6 +581,22 @@ footer ul{
     width: auto;
 }
 
+.popitblock form{
+    float: none;
+}
+.popitblock .telNummer{
+    padding: 20px 40px;
+    font-weight: 500;
+}
+.popitblock .submitButton{
+    margin-left: -70px;
+    margin-bottom: 40px;
+    padding: 20px 40px;
+}
+.popitblock h2{
+    font-size: 41px;
+}
+
 
 @media (max-width: 800px){
     .container{
@@ -615,7 +630,7 @@ footer ul{
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px){
+@media screen and (min-width: 1024px) and (max-width: 1280px){
     .container{
         width: 90%;
         overflow: hidden;
@@ -878,15 +893,34 @@ footer ul{
     }
     .popitblock{
         margin: 100px auto;
-        height: 55vh;
         width: 80%;
-        padding: 0px;
+        padding: 0 0 30px 0;
+    }
+    .popitblock .container{
+        margin: 50% auto;
     }
     .popitblock h2{
         width: 100%;
-        padding: 25px 25px 10px 25px;
-        font-size: 26px;
-        margin: 0;
+        padding: 20px 0 5px 0;
+        font-size: 20px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .popitblock .telNummer{
+        padding: 20px 40px;
+        font-weight: 500;
+        font-size: 18px;
+        width: 50%;
+        display: block;
+        margin: 15px auto;
+    }
+    .popitblock .submitButton{
+        margin-left: 0px;
+        display: block;
+        margin: 0 auto;
+        font-size: 18px;
+        padding: 20px 40px;
     }
     .popitblock p{
         padding: 0 25px;
@@ -921,4 +955,82 @@ footer ul{
 .contactUsForm{
     position: relative;
     z-index: 99;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1440px){
+    .container{
+        width: 80%;
+    }
+    .hero70 h1{
+        font-size: 35px;
+        margin-top: 23vh;
+    }
+    .hero70 p{
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+    .hero70 .mainButton, .heroButtonSecond{
+        padding: 20px 30px;
+        box-shadow: none;
+    }
+    .whyWeText{
+        width: 50%;
+    }
+    .whyWe .container{
+        margin-bottom: 0;
+    }
+    .whyWe{
+        margin-bottom: 0;
+    }
+    .whyWeText .buttonWhyWe{
+        padding: 20px 30px;
+        box-shadow: none;
+    }
+    .whyWeText p{
+        font-size: 18px;
+    }
+    .whyWeText img{
+        width: 50%;
+    } 
+    .contactUsForm .submitButton{
+        font-size: 18px;
+        margin: 20px 30px;
+        margin: 0 0 0 10px;
+    }
+    .telNummer{
+        padding: 20px 30px;
+    }
+    .aligners p{
+        font-size: 18px;
+    }
+    .aligners .alignersText{
+        width: 58%;
+    }
+    .alignersItem{
+        width: 35%;
+    }
+    .aligners p{
+        font-size: 16px;
+        margin: 15px 0;
+    }
+
+    .alignersText .mainButton{
+        padding: 20px 30px;
+        font-size: 18px;
+    }
+
+    .popitblock .telNummer{
+        padding: 20px 40px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .popitblock .submitButton{
+        margin-left: -70px;
+        margin-bottom: 40px;
+        font-size: 18px;
+        padding: 20px 40px;
+    }
+    .popitblock h2{
+        font-size: 35px;
+    }
 }
